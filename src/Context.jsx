@@ -4,7 +4,8 @@ import {React , createContext, useContext, useEffect, useState}from "react";
 
 const AppContext = createContext();
 //creating API.
-export const API_URL = `http://www.omdbapi.com/?i=tt3896198&apikey=bd4b7a88`
+const API_KEY = "bd4b7a88"; 
+export const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&s=`;
 
 // we need to create a provider (delivery boy)
 
